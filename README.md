@@ -11,13 +11,12 @@ TODO
 7. Create Use cases to call data source API
 8. Create view model to call use case
 9. Create dummy screens to call view models and observe events
-   10.Create Character List screen
-10. Create Details screen~~
-11. Write test cases for view models only
-12. Fix version number in gradle dependencies.
+10. Create Character List screen
+11. Create Details screen
+
 
 
 TBD
 
-1. Fix test cases issue of "No value produced in 1s"
-2. Fix missing Dimension data
+1. Fix missing Dimension data
+2. Fix version number in gradle dependencies.

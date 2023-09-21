@@ -15,5 +15,5 @@ interface RemoteApi {
     suspend fun getSingleCharacter(@Path("id") charId: Int): Response<CharacterItem>
 
     @GET("location/{id}")
-    suspend fun getLocationItem(@Path("id") locationId: Int): Response<LocationItem>
+    suspend fun getLocationItem(@Path("id") locationId: String): Response<LocationItem>
 }

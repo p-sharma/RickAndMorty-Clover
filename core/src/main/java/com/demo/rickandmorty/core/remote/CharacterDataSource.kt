@@ -8,5 +8,5 @@ import kotlinx.coroutines.flow.Flow
 interface CharacterDataSource {
     fun getCharacterList(): Flow<ApiResponse<CharacterListResponse>>
     fun getSingleCharacter(charId: Int): Flow<ApiResponse<CharacterItem>>
-    fun getCharacterLocation(locationId: Int): Flow<ApiResponse<LocationItem>>
+    fun getCharacterLocation(locationId: String): Flow<ApiResponse<LocationItem>>
 }

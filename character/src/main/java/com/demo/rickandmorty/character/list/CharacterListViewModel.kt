@@ -29,7 +29,7 @@ class CharacterListViewModel @Inject constructor(
                     }
 
                     is Results.Success -> {
-                        CharacterListUiState.Success(data = response.data?.results)
+                        CharacterListUiState.Success(data = response.data)
                     }
 
                     is Results.Error -> {

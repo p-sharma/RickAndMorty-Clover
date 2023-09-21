@@ -34,7 +34,7 @@ class CharacterDataSourceImpl @Inject constructor(
         }
     }.flowOn(Dispatchers.IO)
 
-    override fun getCharacterLocation(locationId: Int): Flow<ApiResponse<LocationItem>> = flow {
+    override fun getCharacterLocation(locationId: String): Flow<ApiResponse<LocationItem>> = flow {
         val response = api.getLocationItem(locationId)
         if (response.isSuccessful && response.body() != null) {
             emit(ApiResponse.Success(response.body()))
